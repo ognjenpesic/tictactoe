@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="scoreboard">
+            <div>Player X: <span id="score-x">0</span></div>
+            <div>Player O: <span id="score-o">0</span></div>
+        </div>
+        <div id="status-message">Player X starts</div>
+        <div id="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="button-group">
+            <button id="next-round-btn">Next Round</button>
+            <button id="reset-game-btn">New Game</button>
+        </div>
+        <button id="show-history-btn">View Match History</button>
+        <div id="history-modal" class="modal">
+            <div class="modal-content glass">
+                <div class="modal-header">
+                    <h2>Match History</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div id="history-list-container">
+                    </div>
+                <button id="clear-history-btn">Clear All Records</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
